@@ -1,0 +1,171 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+nav {
+    background-color: #ff5733;
+    overflow: hidden;
+    height :50px;
+    margin-bottom: 20px; 
+}
+nav a {
+    float: left;
+    color: rgb(17, 1, 1);
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.logo {
+    float: right;
+    height:40px;
+    padding: 10px;
+}
+
+
+
+
+
+
+.grid {
+    
+    display: grid;
+    background-color: pink;
+    margin:50px;
+    padding-top:25px;
+    grid-template-columns: calc(36% - 5px) calc(34% - 5px);
+    grid-template-rows:    calc(30% - 5px) calc(30% - 5px);
+    grid-gap: 10px;
+    aspect-ratio: 16 / 9;
+  }
+  
+  .grid .right {
+    grid-column: 1 / 2;
+    grid-row:    1 / span 2;
+  }
+  
+  .grid .lower_left {
+    grid-column: 2 / 2;
+    grid-row:    1 / 2;
+  }
+  
+  .grid .upper_left {
+    grid-column: 2 / 2;
+    grid-row:    2 / 2;
+  }
+  
+  .grid .item img {
+    width:  100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+
+
+
+.grid-description {
+    align-items: right;
+    text-align: right;
+    background-color: #ff5733;
+    color:#000000;
+    width: 120px;
+    padding: 15px;
+    position: absolute;
+    top:700px;
+    right: 100px;
+    width: 200px;
+    height: 280px;
+
+}
+.grid-header{
+    font-size: 10px;
+    line-height: 1.6;
+    text-align: left;
+ 
+}
+.grid-para{
+    font-size: 25px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: left;
+}
+.grid-click{
+    font-size: 15px;
+    line-height: 1.6;
+    text-align: left;
+    margin-top:100px;
+    
+}
+.arrow-image{
+    position: absolute;
+    
+    right: 150px;
+    width: 200px;
+    height: 120px;
+    
+}
+
+.container {
+    display: flex;
+    background-color: pink;
+    align-items: center;
+  }
+  
+  .text {
+    flex: 1;
+    padding: 0 20px;
+  }
+  
+  .image {
+    flex: 1;
+    text-align: right;
+  }
+  
+  .image img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .text h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .text p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  .button{
+    padding: 10px 20px;
+    background-color: #ff5733;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+
+
+  }
+
+  @media only screen and (min-width: 768px) {
+    .container {
+        padding: 0 20px;
+    }
+    
+    nav a {
+        padding: 14px 20px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    nav a {
+        display: block;
+        padding: 10px 0;
+    }
+
+    .logo {
+        float: none;
+        margin: 10px auto;
+    }
+}
